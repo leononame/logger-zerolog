@@ -6,9 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/leononame/logger"
-
 	"github.com/juju/errors"
+	"github.com/leononame/logger/v2"
 	"github.com/stretchr/testify/assert"
 )
 
