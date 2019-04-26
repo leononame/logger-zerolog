@@ -1,0 +1,27 @@
+kind: pipeline
+name: default
+
+branches:
+  include:
+    - master
+
+steps:
+- name: test
+  image: golang:1.12
+  environment:
+    CGO_ENABLED: 0
+    GO111MODULE: on
+  commands:
+  - go test -cover -coverprofile coverage.out
+- name: build
+  image: golang:1.12
+  environment:
+    CGO_ENABLED: 0
+    GO111MODULE: on
+  commands:
+  - go build
+- name: coverage
+  image: plugins/codecov
+  settings:
+    token:
+      from_secret: CODECOV_TOKEN

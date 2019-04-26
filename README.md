@@ -1,0 +1,3 @@
+# Logger Zerolog [![GoDoc](https://godoc.org/github.com/leononame/logger-zerolog?status.svg)](https://godoc.org/github.com/leononame/logger-zerolog) [![Build Status](https://cloud.drone.io/api/badges/leononame/logger-zerolog/status.svg)](https://cloud.drone.io/leononame/logger-zerolog) [![codecov](https://codecov.io/gh/leononame/logger-zerolog/branch/master/graph/badge.svg)](https://codecov.io/gh/leononame/logger-zerolog)
+
+This package contains an implementation for the [Logger](https://github.com/leononame/logger) structured logging abstraction. The implementation of this package uses zerolog as structured logging backend. Other implementations and the actual docs can be found on the original [Logger](https://github.com/leononame/logger) package.
